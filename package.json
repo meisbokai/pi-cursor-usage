@@ -13,6 +13,8 @@
   },
   "scripts": {
     "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
     "typecheck": "tsc --noEmit",
     "test": "node --experimental-vm-modules node_modules/.bin/vitest run 2>/dev/null || vitest run",
     "check": "npm run typecheck && npm run test"
