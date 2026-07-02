@@ -1,0 +1,56 @@
+{
+  "name": "@meisbokai/pi-cursor-usage",
+  "version": "0.1.0",
+  "description": "Pi extension for monitoring Cursor subscription usage (Auto+Composer and API quotas)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-vm-modules node_modules/.bin/vitest run 2>/dev/null || vitest run",
+    "check": "npm run typecheck && npm run test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": ">=0.79.0",
+    "@earendil-works/pi-tui": ">=0.79.0"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "cursor",
+    "usage-monitoring",
+    "api-quota",
+    "composer"
+  ],
+  "pi": {
+    "extensions": [
+      "./dist/index.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meisbokai/pi-cursor-usage"
+  },
+  "author": "meisbokai",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ]
+}
