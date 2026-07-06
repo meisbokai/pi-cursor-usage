@@ -1,7 +1,8 @@
 {
   "name": "@meisbokai/pi-cursor-usage",
   "version": "0.1.0",
-  "description": "Pi extension for monitoring Cursor subscription usage (Auto+Composer and API quotas)",
+  "description": "[DEPRECATED] Pi extension for monitoring Cursor subscription usage (Auto+Composer and API quotas) — use pi-usage-unified",
+  "deprecated": true,
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

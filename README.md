@@ -1,3 +1,9 @@
+> ⚠️ **DEPRECATED.** This extension is superseded by [`pi-usage-unified`](https://github.com/meisbokai/pi-usage-unified), which now provides Cursor usage monitoring (plus zai, codex, opencode, openrouter, deepseek) in one unified extension. Please switch:
+>
+> ```bash
+> pi install git:github.com/meisbokai/pi-usage-unified
+> ```
+
 # pi-cursor-usage
 
 Pi extension that shows **Cursor subscription usage** in the footer when you use the Cursor provider — matching the Cursor portal's **Total**, **Auto + Composer**, and **API** percentages.
